@@ -22,15 +22,17 @@
                     <div class="row mt-2 justify-content-center">
                       <img src="img/New_Logo_Gris_2023.png" alt="iscjlchavezG" style="width: 250px;">
                     </div>
-                    <form action="" method="post" autocomplete="off" class="needs-validation" novalidate">
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" autocomplete="off" class="needs-validation" novalidate>
                       <div class="row mt-4 justify-content-center">
                         <div class="col-sm-8 col-md-8 col-lg-8">
-                            <input type="text" name="Usuario" id="Usuario" placeholder="Usuario" class="form-control rounded-pill border-success" autocomplete="off">
+                            <input type="text" name="Usuario" id="Usuario" placeholder="Usuario" class="form-control rounded-pill border-success" autocomplete="off" required />
+                            <div class="invalid-feedback">Por favor ingresa tu Usuario.</div>
                         </div>
                       </div>
                       <div class="row mt-2 mb-2 justify-content-center">
                           <div class="col-sm-8 col-md-8 col-lg-8">
-                            <input type="password" name="Password" id="pass" placeholder="Password" class="form-control rounded-pill border-success" autocomplete="off">
+                            <input type="password" name="Password" id="pass" placeholder="Password" class="form-control rounded-pill border-success" autocomplete="off" required />
+                            <div class="invalid-feedback">Por favor ingresa tu password.</div>
                           </div>
                       </div>
                       <div class="row mt-1 justify-content-center">
@@ -90,6 +92,7 @@
       </div>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/dark-mode.js"></script>
+      <script src="js/pace.js"></script>
       <script>
           function verpass(cb) {
               if (cb.checked)
@@ -98,5 +101,27 @@
                 $('#pass').attr("type", "password");
           }
       </script>
+      <script>
+                (function() {
+                    'use strict'
+
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.querySelectorAll('.needs-validation')
+
+                    // Loop over them and prevent submission
+                    Array.prototype.slice.call(forms)
+                        .forEach(function(form) {
+                            form.addEventListener('submit', function(event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault()
+                                    event.stopPropagation()
+                                }
+
+                                form.classList.add('was-validated')
+                            }, false)
+                        })
+                })()
+            </script>
+   
 </body>
 </html>
