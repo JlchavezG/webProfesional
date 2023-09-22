@@ -24,7 +24,13 @@
                     </div>
                     <div class="row mt-2">
                       <div class="col-sm-4 col-md-4 col-lg-4"></div>
-                      <div class="col-sm-8 col-md-8 col-lg-8">Perdiste tu Password</div>
+                      <div class="col-sm-8 col-md-8 col-lg-8">
+                        <a href="recuperarPass.php" class="text-success text-decoration-none"> 
+                            <svg class="bi" width="20" height="20" fill="currentColor">
+                                <use xlink:href="library/icons/bootstrap-icons.svg#key"/>
+                            </svg> Perdiste tu Password
+                        </a>
+                      </div>
                     </div>
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" autocomplete="off" class="needs-validation" novalidate>
                       <div class="row mt-2 justify-content-center">
