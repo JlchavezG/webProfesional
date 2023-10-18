@@ -23,13 +23,25 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <svg class="bi" width="20" height="20" fill="currentColor">
+                                <use xlink:href="library/icons/bootstrap-icons.svg#house"/>
+                            </svg> 
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">
+                            <svg class="bi" width="20" height="20" fill="currentColor">
+                                <use xlink:href="library/icons/bootstrap-icons.svg#list-check"/>
+                            </svg> 
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">
+                            <svg class="bi" width="20" height="20" fill="currentColor">
+                                <use xlink:href="library/icons/bootstrap-icons.svg#search"/>
+                            </svg> 
+                        </a>
                     </li>
                 </ul>
                 <span class="navbar-text">
@@ -41,17 +53,48 @@
                                 </svg> Menu
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <svg class="bi" width="20" height="20" fill="currentColor">
                                     <use xlink:href="library/icons/bootstrap-icons.svg#person-circle"/>
                                 </svg> Usuario
                             </a>
+                            <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <svg class="bi" width="20" height="20" fill="currentColor">
+                                            <use xlink:href="library/icons/bootstrap-icons.svg#person-gear"/>
+                                        </svg> Perfil
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <svg class="bi" width="20" height="20" fill="currentColor">
+                                            <use xlink:href="library/icons/bootstrap-icons.svg#question-lg"/>
+                                        </svg> Acerca de
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <svg class="bi" width="20" height="20" fill="currentColor">
+                                            <use xlink:href="library/icons/bootstrap-icons.svg#power"/>
+                                        </svg> Cerrar Sesión
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
                                 <svg class="bi" width="20" height="20" fill="currentColor">
                                     <use xlink:href="library/icons/bootstrap-icons.svg#bell-fill"/>
+                                </svg> 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <svg class="bi" width="20" height="20" fill="currentColor">
+                                    <use xlink:href="library/icons/bootstrap-icons.svg#headset"/>
                                 </svg> 
                             </a>
                         </li>
@@ -194,7 +237,50 @@
                         </div>
                     </div>
                     <div class="row mt-3 text-center">
-                        
+                        <div class="col-sm-12 col-md-6 col-lg-6 mt-2">
+                            <div class="card shadow border-0 border-3 border-start border-info bg-light">
+                                <div class="card-header">hi</div>
+                                <div class="row py-2 mt-1">
+                                    <div class="col-sm-3 col-md-3 col-lg-3 justify-content-center">
+                                        <svg class="bi" width="25" height="25" fill="currentColor">
+                                            <use xlink:href="library/icons/bootstrap-icons.svg#person-workspace" />
+                                        </svg>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3 justify-content-center">
+                                        <span class="fs-6 text-center">Usuario: </span><span class="fs-6 fw-bold">Nombre</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-end">
+                                            <svg class="bi" width="15" height="15" fill="currentColor">
+                                                <use xlink:href="library/icons/bootstrap-icons.svg#caret-right-fill" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 mt-2">
+                            <div class="card shadow border-0 border-3 border-start border-info bg-light">
+                                <div class="card-header">hi</div>
+                                <div class="row py-2 mt-1">
+                                    <div class="col-sm-3 col-md-3 col-lg-3 justify-content-center">
+                                        <svg class="bi" width="25" height="25" fill="currentColor">
+                                            <use xlink:href="library/icons/bootstrap-icons.svg#person-workspace" />
+                                        </svg>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3 justify-content-center">
+                                        <span class="fs-6 text-center">Usuario: </span><span class="fs-6 fw-bold">Nombre</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-end">
+                                            <svg class="bi" width="15" height="15" fill="currentColor">
+                                                <use xlink:href="library/icons/bootstrap-icons.svg#caret-right-fill" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
