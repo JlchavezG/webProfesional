@@ -15,7 +15,7 @@
       <div class="justify-content-center mt-5">
           <div class="row mt-3 text-center">
             <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-                <h1 class="text-center display-6">Login | <span class="text-success"> Inicio de sesión</span></h1>
+                <h1 class="text-center display-6">Login | <span class="text-info"> Inicio de sesión</span></h1>
                 <div class="row mt-2 px-1 justify-content-center mt-5">
                     <div class="col-sm-6 col-md-6 col-lg-6">
                     <div>  
@@ -25,7 +25,7 @@
                     <div class="row mt-2">
                       <div class="col-sm-4 col-md-4 col-lg-4"></div>
                       <div class="col-sm-8 col-md-8 col-lg-8">
-                        <a href="recuperarPass.php" class="text-success text-decoration-none"> 
+                        <a href="recuperarPass.php" class="text-primary text-decoration-none"> 
                             <svg class="bi" width="20" height="20" fill="currentColor">
                                 <use xlink:href="library/icons/bootstrap-icons.svg#key"/>
                             </svg> Perdiste tu Password
@@ -35,13 +35,13 @@
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" autocomplete="off" class="needs-validation" novalidate>
                       <div class="row mt-2 justify-content-center">
                         <div class="col-sm-8 col-md-8 col-lg-8">
-                            <input type="text" name="Usuario" id="Usuario" placeholder="Usuario" class="form-control rounded-pill border-success" autocomplete="off" required />
+                            <input type="text" name="Usuario" id="Usuario" placeholder="Usuario" class="form-control rounded-pill border-info" autocomplete="off" required />
                             <div class="invalid-feedback">Por favor ingresa tu Usuario.</div>
                         </div>
                       </div>
                       <div class="row mt-2 mb-2 justify-content-center">
                           <div class="col-sm-8 col-md-8 col-lg-8">
-                            <input type="password" name="Password" id="pass" placeholder="Password" class="form-control rounded-pill border-success" autocomplete="off" required />
+                            <input type="password" name="Password" id="pass" placeholder="Password" class="form-control rounded-pill border-info" autocomplete="off" required />
                             <div class="invalid-feedback">Por favor ingresa tu password.</div>
                           </div>
                       </div>
@@ -69,7 +69,7 @@
                       <div class="row mt-4 mb-2 justify-content-center">
                           <div class="col-sm-8 col-md-8 col-lg-8">
                               <div class="d-grid gap-2">
-                                <input type="submit" name="btn-ingresar" id="btn-ingreso" class="btn btn-sm btn-outline-success bg-gradient rounded-pill">
+                                <input type="submit" value="Ingresar" name="btn-ingresar" id="btn-ingreso" class="btn btn-sm btn-outline-info bg-gradient rounded-pill">
                               </div>
                           </div>
                       </div>
@@ -80,24 +80,24 @@
               <div class="row mt-2 justify-content-center">
                 <div class="col-sm-12 col-lg-12 col-md-12">
                   <a href="https://www.facebook.com/iscjoseluischavezg" target="_blank" class="text-decoration-none text-success">
-                  <svg class="bi text-success" width="20" height="20" fill="currentColor">
+                  <svg class="bi text-primary" width="20" height="20" fill="currentColor">
                     <use xlink:href="library/icons/bootstrap-icons.svg#facebook"/>
                   </svg>
                   </a>
                   <a href="https://twitter.com/daerblack" target="_blank" class="text-decoration-none text-success">
-                  <svg class="bi text-success" width="20" height="20" fill="currentColor">
+                  <svg class="bi text-primary" width="20" height="20" fill="currentColor">
                     <use xlink:href="library/icons/bootstrap-icons.svg#twitter"/>
                   </svg>
                   </a>
                   <a href="https://www.instagram.com/iscjlchavezg/" target="_blank" class="text-decoration-none text-success">
-                  <svg class="bi text-success" width="20" height="20" fill="currentColor">
+                  <svg class="bi text-primary" width="20" height="20" fill="currentColor">
                     <use xlink:href="library/icons/bootstrap-icons.svg#instagram"/>
                   </svg>
                   </a>
-                  <svg class="bi text-success" width="20" height="20" fill="currentColor">
+                  <svg class="bi text-primary" width="20" height="20" fill="currentColor">
                     <use xlink:href="library/icons/bootstrap-icons.svg#github"/>
                   </svg>
-                  <svg class="bi text-success" width="20" height="20" fill="currentColor">
+                  <svg class="bi text-primary" width="20" height="20" fill="currentColor">
                     <use xlink:href="library/icons/bootstrap-icons.svg#youtube"/>
                   </svg>
                 </div>
