@@ -10,6 +10,7 @@
     <script src="js/jquery.js"></script>
     <title>Escritorio| IscjlchavezGAdmin</title>
 </head>
+
 <body>
     <!-- inicia el navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -25,60 +26,62 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
                             <svg class="bi" width="20" height="20" fill="currentColor">
-                                <use xlink:href="library/icons/bootstrap-icons.svg#house"/>
-                            </svg> 
+                                <use xlink:href="library/icons/bootstrap-icons.svg#house" />
+                            </svg>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <svg class="bi" width="20" height="20" fill="currentColor">
-                                <use xlink:href="library/icons/bootstrap-icons.svg#list-check"/>
-                            </svg> 
+                                <use xlink:href="library/icons/bootstrap-icons.svg#list-check" />
+                            </svg>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <svg class="bi" width="20" height="20" fill="currentColor">
-                                <use xlink:href="library/icons/bootstrap-icons.svg#search"/>
-                            </svg> 
+                                <use xlink:href="library/icons/bootstrap-icons.svg#search" />
+                            </svg>
                         </a>
                     </li>
                 </ul>
                 <span class="navbar-text">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"  data-bs-toggle="offcanvas" data-bs-target="#MenuSistemasOff" aria-controls="MenuSistemasOff">
+                            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="offcanvas" data-bs-target="#MenuSistemasOff" aria-controls="MenuSistemasOff">
                                 <svg class="bi" width="20" height="20" fill="currentColor">
-                                    <use xlink:href="library/icons/bootstrap-icons.svg#grip-vertical"/>
+                                    <use xlink:href="library/icons/bootstrap-icons.svg#grip-vertical" />
                                 </svg> Menu
                             </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <svg class="bi" width="20" height="20" fill="currentColor">
-                                    <use xlink:href="library/icons/bootstrap-icons.svg#person-circle"/>
+                                    <use xlink:href="library/icons/bootstrap-icons.svg#person-circle" />
                                 </svg> Usuario
                             </a>
                             <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
                                 <li>
                                     <a class="dropdown-item" href="#">
                                         <svg class="bi" width="20" height="20" fill="currentColor">
-                                            <use xlink:href="library/icons/bootstrap-icons.svg#person-gear"/>
+                                            <use xlink:href="library/icons/bootstrap-icons.svg#person-gear" />
                                         </svg> Perfil
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">
                                         <svg class="bi" width="20" height="20" fill="currentColor">
-                                            <use xlink:href="library/icons/bootstrap-icons.svg#question-lg"/>
+                                            <use xlink:href="library/icons/bootstrap-icons.svg#question-lg" />
                                         </svg> Acerca de
                                     </a>
                                 </li>
-                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li>
                                     <a class="dropdown-item" href="#">
                                         <svg class="bi" width="20" height="20" fill="currentColor">
-                                            <use xlink:href="library/icons/bootstrap-icons.svg#power"/>
+                                            <use xlink:href="library/icons/bootstrap-icons.svg#power" />
                                         </svg> Cerrar Sesión
                                     </a>
                                 </li>
@@ -87,15 +90,15 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
                                 <svg class="bi" width="20" height="20" fill="currentColor">
-                                    <use xlink:href="library/icons/bootstrap-icons.svg#bell-fill"/>
-                                </svg> 
+                                    <use xlink:href="library/icons/bootstrap-icons.svg#bell-fill" />
+                                </svg>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
                                 <svg class="bi" width="20" height="20" fill="currentColor">
-                                    <use xlink:href="library/icons/bootstrap-icons.svg#headset"/>
-                                </svg> 
+                                    <use xlink:href="library/icons/bootstrap-icons.svg#headset" />
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -107,20 +110,22 @@
     <!-- inicia offcanva -->
     <div class="offcanvas offcanvas-start bg-light" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="MenuSistemasOff" aria-labelledby="MenuSistemas">
         <div class="offcanvas-header">
-           <div class="container text-center mt-3">
-           <svg class="bi" width="50" height="50" fill="currentColor">
-                <use xlink:href="library/icons/bootstrap-icons.svg#person-circle"/>
-            </svg>
-           </div>
+            <div class="container text-center mt-3">
+                <svg class="bi" width="50" height="50" fill="currentColor">
+                    <use xlink:href="library/icons/bootstrap-icons.svg#person-circle" />
+                </svg>
+            </div>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-                <li class="list-group-item">A fourth item</li>
-                <li class="list-group-item">And a fifth one</li>
+                <li class="list-group-item">Usuarios</li>
+                <li class="list-group-item">Alumnos</li>
+                <li class="list-group-item">Asistencias</li>
+                <li class="list-group-item">Reportes</li>
+                <li class="list-group-item">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ModalBoot">Boot</a>   
+                </li>
             </ul>
         </div>
     </div>
@@ -286,7 +291,26 @@
             </div>
         </div>
     </div>
-    <!-- termina el contenedor del dashboard-->    
+    <!-- termina el contenedor del dashboard-->
+    <!-- Modal -->
+    <div class="modal fade" id="ModalBoot" tabindex="-1" aria-labelledby="ModalBootLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title display-6" id="exampleModalLabel">Bienvenido  Boot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Cancelar</button>
+                    <a href="app/index.php" class="btn btn-primary btn-sm">Comenzar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- termina mi modal -->
     <script src="js/bootstrap.min.js"></script>
 </body>
 
